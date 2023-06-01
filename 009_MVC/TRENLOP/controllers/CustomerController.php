@@ -3,7 +3,7 @@ require_once 'models/Customer.php';
 class CustomerController {
     // Hien thi danh sach records => table
     public function index(){
-        $items = Customer::all();
+        $customers = Customer::all();
         // Truyen data xuong view
         require_once 'views/customers/index.php';
        
